@@ -70,21 +70,7 @@ class Summarizer:
             
         return summary
     
-    # def generate_extractive_summary(self, text):
-    #     try:
-    #         # Generate extractive summary using summa library
-    #         extractive_summary = summarizer.summarize(text)
-    #         if not extractive_summary:
-    #             extractive_summary = "No extractive summary could be generated."
-    #     except Exception as e:
-    #         print(f"Error generating extractive summary: {e}")
-    #         extractive_summary = "Extractive summary could not be generated."
-            
-    #     print()
-    #     return extractive_summary
     
-
-
     def generate_extractive_summary(self, text, num_sentences=3):
         try:
             sentences = sent_tokenize(text)  # Tokenize text into sentences
